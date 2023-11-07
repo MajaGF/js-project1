@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booleans</title>
+	</head>
+	<body>
+		<p>
+			In computing, the term Boolean means a result that can only have one of two
+			possible values: true or false. Boolean logic takes two statements or
+			expressions and applies a logical operator to generate a Boolean value that
+			can be either true or false. To return the result, operators like AND, OR,
+			NOT, etc. are used.
+		</p>
+		<p>
+			The Boolean data type values may be the following: True or false, Yes or no,
+			On or off, value 1 or 0.
+		</p>
+
+		<script>
+			//2 booleans values: true & false
+			true;
+			false;
+
+			console.log(3 > 5); //3 je veće od 5 = false
+
+			/*operatori usporedbe:
+			> veće od
+			< manje od
+			>= veće ili jednako
+			<= manje ili jednako
+			=== jednako
+			!== nije jednako*/
+
+			if (true) {
+				console.log("hello");
+			} else {
+				console.log("bye bye");
+			}
+
+			if (false) {
+				console.log("hello");
+			} else {
+				console.log("bye bye");
+			}
+
+			//example if someone is old enough to drive
+
+			if (30 >= 18) {
+				console.log("Old enough to drive :)");
+			} else {
+				console.log("You cannot drive yet!");
+			}
+
+			if (16 >= 18) {
+				console.log("Old enough to drive");
+			} else {
+				console.log("You cannot drive yet!");
+			}
+
+			// umjesto brojeva koji se ponavljaju koristimo varijable!!!
+			//npr. const age = 18
+
+			const age = 18;
+			if (30 > age) {
+				console.log("yes");
+			}
+
+			//logical operators = logic between variables or values => && (and); || (or); ! (not)
+			console.log(true && true);
+			console.log(0.2 > 0 && 0.2 <= 1 / 5);
+
+			console.log(true || false);
+			console.log(!true);
+
+			//Truthy and falsy are used when evaluating decision-criteria that aren't clearly true or false.
+			//In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy.
+			//That is, all values are truthy except false, 0, -0, 0n, "", null, undefined, NaN, and document.all.
+
+			if (5) {
+				console.log("truthy");
+			}
+		</script>
+	</body>
+</html>

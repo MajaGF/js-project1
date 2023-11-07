@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Variables</title>
+	</head>
+	<body>
+		<script>
+			// const - uvijek OSIM kad znamo da će se neka vrijednost mijenjati, onda koristimo let
+
+			let variable1 = 3; //let - stvaranje nove varijable kojoj se MOŽE mijenjati vrijednost
+			console.log(variable1);
+
+			const calculation = 2 + 2;
+			console.log(calculation);
+			console.log(calculation + 2);
+
+			const result = calculation + 2;
+			console.log(result);
+
+			const message = "hello";
+			console.log(message);
+			console.log(";");
+
+			variable1 = 5; //promjena vrijednosti (re-assigning) - na početku je variable1=3, sada =5; ne mijenja početne varijable nego počinje s novom vrijednosti od trenutka promjene!
+			console.log(variable1);
+
+			variable1 = variable1 + 1;
+			console.log(variable1);
+
+			const variable2 = 3; //const - stvaranje nove varijable kojoj se NE može mijenjati vrijednost
+			var variable3 = 3; // isto što i let ali se ne koristi jer ne prati "rules of scope"....
+
+			console.log(typeof variable2); //typeof - prikazuje tip varijable - ovdje je to broj
+			console.log(typeof message); //typeof je string
+		</script>
+	</body>
+</html>
